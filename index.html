@@ -3,172 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Jimson D. Ragas, Civil Engineer specializing in estimation and site supervision.">
-  <title>Jimson D. Ragas Portfolio</title>
+  <title>Jimson D. Ragas | Civil Engineer</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- NAV -->
 <header class="header">
   <nav class="navbar container">
+    <div class="logo">Jimson</div>
+
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#case-studies">Projects</a>
       <a href="#contact">Contact</a>
     </div>
 
-    <button id="darkToggle" class="dark-btn" aria-label="Toggle dark mode">
-      🌙
-    </button>
+    <button id="darkToggle">🌙</button>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-content container">
-    <h1>I am <span id="typing"></span></h1>
-    <p>I build accurate estimates, manage site execution, and deliver reliable construction results.</p>
-    <a href="CV.pdf" class="btn" download>Download CV</a>
+  <div class="container">
+    <h1>I help construction projects stay on time and within budget.</h1>
+
+    <p>
+      Civil Engineer specializing in quantity takeoffs, cost estimation,
+      and site execution with proven accuracy and efficiency.
+    </p>
+
+    <a href="#" class="btn">Download CV</a>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="proof">
+  <div class="container proof-grid">
+    <div>
+      <h3>3+</h3>
+      <p>Years Experience</p>
+    </div>
+    <div>
+      <h3>20+</h3>
+      <p>Projects Estimated</p>
+    </div>
+    <div>
+      <h3>10–15%</h3>
+      <p>Cost Optimization</p>
+    </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about-modern">
-  <div class="container about-grid">
+<section id="about" class="container about">
+  <img src="profile.jfif" alt="Profile">
 
-    <div class="about-left">
-      <img src="profile.jfif" alt="Portrait of Jimson D. Ragas" class="profile-modern">
-
-      <div class="quick-info">
-        <p><strong>Name:</strong> Jimson D. Ragas</p>
-        <p><strong>Age:</strong> 29</p>
-        <p><strong>Location:</strong> Philippines</p>
-        <p><strong>Field:</strong> Civil Engineering</p>
-        <p><strong>Focus:</strong> Estimation | Takeoffs | Site Work</p>
-      </div>
-    </div>
-
-    <div class="about-right">
-      <h2>About Me</h2>
-
-      <p>
-        I specialize in <strong>quantity takeoffs, cost estimation, and site supervision</strong>,
-        ensuring projects stay on schedule and within budget.
-      </p>
-
-      <p>
-        My approach emphasizes precision, efficiency, and clear communication to minimize errors
-        and deliver consistent construction results.
-      </p>
-
-      <div class="about-extra">
-        <h3>Beyond Engineering</h3>
-        <p>I focus on continuous improvement, staying active, and exploring productivity tools.</p>
-
-        <div class="hobbies">
-          <span>🏋️ Fitness</span>
-          <span>🌍 Travel</span>
-          <span>💻 Tech</span>
-          <span>📚 Learning</span>
-        </div>
-      </div>
-    </div>
-
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I specialize in estimation, takeoffs, and site supervision,
+      ensuring projects are completed efficiently and within budget.
+    </p>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
-  <div class="container">
-    <h2>Skills</h2>
+<section id="skills" class="container">
+  <h2>Skills</h2>
 
-    <div class="skills-grid">
+  <div class="skill">
+    <span>AutoCAD</span>
+    <div class="bar"><div style="width:90%"></div></div>
+  </div>
 
-      <div class="skill">
-        <span>AutoCAD</span>
-        <div class="bar"><div style="width:90%"></div></div>
-      </div>
+  <div class="skill">
+    <span>PlanSwift</span>
+    <div class="bar"><div style="width:85%"></div></div>
+  </div>
 
-      <div class="skill">
-        <span>Bluebeam</span>
-        <div class="bar"><div style="width:90%"></div></div>
-      </div>
+  <div class="skill">
+    <span>Excel</span>
+    <div class="bar"><div style="width:88%"></div></div>
+  </div>
 
-      <div class="skill">
-        <span>PlanSwift</span>
-        <div class="bar"><div style="width:85%"></div></div>
-      </div>
+</section>
 
-      <div class="skill">
-        <span>Excel</span>
-        <div class="bar"><div style="width:88%"></div></div>
-      </div>
+<!-- EXPERIENCE -->
+<section id="experience" class="container">
+  <h2>Experience</h2>
 
-      <div class="skill">
-        <span>Cost Estimation</span>
-        <div class="bar"><div style="width:92%"></div></div>
-      </div>
-
-    </div>
+  <div class="card">
+    <h3>Site Engineer</h3>
+    <p>ABC Construction | 2022–Present</p>
+    <ul>
+      <li>Managed site operations</li>
+      <li>Prepared estimates and takeoffs</li>
+      <li>Ensured project quality and safety</li>
+    </ul>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
+<!-- CASE STUDY -->
+<section id="case-studies" class="container">
+  <h2>Case Study</h2>
 
-    <div class="grid">
+  <div class="case-study">
+    <h3>Residential Project Optimization</h3>
 
-      <article class="card project" onclick="openModal('Detailed quantity takeoff project...')">
-        <img src="project1.jpg" alt="Quantity takeoff project preview">
-        <h3>Quantity Takeoff</h3>
-        <p>Performed detailed takeoffs using PlanSwift to improve accuracy.</p>
-      </article>
+    <p><strong>Value:</strong> ₱5M</p>
 
-      <article class="card project" onclick="openModal('Detailed cost estimation project...')">
-        <img src="project2.jpg" alt="Cost estimation project preview">
-        <h3>Cost Estimation</h3>
-        <p>Developed Excel-based budgets to control project costs.</p>
-      </article>
+    <h4>Problem</h4>
+    <p>Budget overruns due to inaccurate estimation.</p>
 
-    </div>
+    <h4>Solution</h4>
+    <p>Used PlanSwift and Excel to refine estimates.</p>
+
+    <h4>Results</h4>
+    <ul>
+      <li>Reduced cost variance by 12%</li>
+      <li>Improved efficiency by 30%</li>
+    </ul>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <h2>Contact</h2>
+<section id="contact" class="container">
+  <h2>Contact</h2>
 
-    <div class="card contact-card">
-      <p>📧 <a href="mailto:jimsond.ragas@gmail.com">jimsond.ragas@gmail.com</a></p>
-      <p>📞 <a href="tel:+639532570916">+63 953 257 0916</a></p>
-
-      <div class="social-links">
-        <a href="https://linkedin.com/in/jimsonragas" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/jimsonragas" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </div>
+  <p>Email: jimson@email.com</p>
+  <p>Phone: +63...</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2026 Jimson D. Ragas</p>
 </footer>
-
-<!-- MODAL -->
-<div id="modal" class="modal" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <button onclick="closeModal()" class="close" aria-label="Close modal">&times;</button>
-    <p id="modalText"></p>
-  </div>
-</div>
 
 <script src="script.js"></script>
 
