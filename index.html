@@ -3,193 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Civil Engineer & Virtual Assistant | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portfolio of Jimson D. Ragas — Civil Engineer specializing in quantity takeoffs, cost estimation, and site supervision.">
+    <meta name="keywords" content="Civil Engineer, Quantity Takeoff, Cost Estimation, Site Supervision, PlanSwift, Bluebeam, AutoCAD">
+    <meta name="author" content="Jimson D. Ragas">
+
+    <title>Jimson D. Ragas | Civil Engineer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
 
-    <!-- Animated Geometric Background -->
-    <canvas id="bg-canvas"></canvas>
-    <div class="bg-overlay"></div>
+    <!-- ========== NAVIGATION ========== -->
+    <header id="header">
+        <nav class="navbar">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-icon">🏗️</span>
+                <span class="brand-name">Jimson<span class="brand-dot">.</span></span>
+            </a>
 
-    <!-- Toast Notification -->
-    <div class="toast" id="toast">✅ Message sent successfully!</div>
-
-    <!-- Main Content -->
-    <div class="main-wrapper">
-        <!-- Navigation -->
-        <nav id="navbar">
-            <span class="nav-logo">⚙️ Portfolio</span>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#highlights">Highlights</a></li>
-                <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <button id="darkToggle" class="dark-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobileMenuBtn" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
+    </header>
 
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="hero-content">
-                <div class="hero-text fade-in">
-                    <span class="badge">Available for Opportunities</span>
-                    <h1>Civil Engineer<br>& <span class="gold-accent">Virtual Assistant</span></h1>
-                    <p class="subtitle">
-                        Blending technical engineering precision with top-tier administrative support.
-                        I deliver structured, reliable, and high-quality results — whether on-site or online.
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">👋 Hello, I'm</p>
+            <h1 class="hero-title">
+                <span id="typing"></span><span class="cursor">|</span>
+            </h1>
+            <p class="hero-subtitle">
+                I build accurate estimates, manage site execution, and deliver reliable construction results.
+            </p>
+            <div class="hero-buttons">
+                <a href="CV.pdf" class="btn btn-primary" download>
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fa-solid fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Accuracy</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll to about section">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2>Get To Know<span class="accent">.</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left Column -->
+                <div class="about-left">
+                    <div class="profile-wrapper">
+                        <img src="profile.jfif" alt="Jimson D. Ragas profile picture" class="profile-img" loading="lazy">
+                        <div class="profile-status">🟢 Available for Work</div>
+                    </div>
+
+                    <div class="quick-info card">
+                        <h3>Quick Info</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-user"></i> <strong>Name:</strong> Jimson D. Ragas</li>
+                            <li><i class="fa-solid fa-cake-candles"></i> <strong>Age:</strong> 29</li>
+                            <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Philippines</li>
+                            <li><i class="fa-solid fa-hard-hat"></i> <strong>Field:</strong> Civil Engineering</li>
+                            <li><i class="fa-solid fa-bullseye"></i> <strong>Focus:</strong> Estimation | Takeoffs | Site Work</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="about-right">
+                    <p class="about-lead">
+                        I'm a <strong>civil engineer</strong> specializing in <strong>quantity takeoffs, cost estimation, and site supervision</strong>.
+                        I ensure projects stay on schedule and within budget by combining technical accuracy with real-world site experience.
                     </p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#services" class="btn btn-outline">Explore Services</a>
-                    </div>
-                </div>
-                <div class="hero-visual fade-in">
-                    <div class="hero-card-stack">
-                        <div class="hero-card card-front">
-                            <div class="icon-circle">🏗️</div>
-                            <h3>Civil Engineering</h3>
-                            <p>Structural design, project planning & site supervision</p>
-                        </div>
-                        <div class="hero-card card-back">
-                            <div class="icon-circle">💼</div>
-                            <h3>Virtual Assistance</h3>
-                            <p>Admin support, scheduling & data management</p>
-                        </div>
-                        <div class="hero-card card-back2">
-                            <div class="icon-circle">🎯</div>
-                            <h3>Dual Expertise</h3>
-                            <p>Precision meets productivity</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Services Section -->
-        <section id="services">
-            <div class="section-header fade-in">
-                <span class="section-badge">What I Offer</span>
-                <h2>Professional Services</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="services-grid">
-                <!-- Civil Engineering Card -->
-                <div class="service-card fade-in">
-                    <span class="card-icon">🏗️</span>
-                    <h3>Civil Engineering</h3>
-                    <p>From structural analysis to on-site project coordination, I bring technical rigor and practical problem-solving to every engineering challenge.</p>
-                    <div class="tags">
-                        <span class="tag">Structural Design</span>
-                        <span class="tag">AutoCAD</span>
-                        <span class="tag">Project Planning</span>
-                        <span class="tag">Site Supervision</span>
-                        <span class="tag">Cost Estimation</span>
-                        <span class="tag">Quality Control</span>
-                    </div>
-                </div>
-                <!-- Virtual Assistant Card -->
-                <div class="service-card fade-in">
-                    <span class="card-icon">💻</span>
-                    <h3>Virtual Assistant</h3>
-                    <p>Efficient, organized, and detail-oriented remote support. I handle administrative workloads so you can focus on scaling your business.</p>
-                    <div class="tags">
-                        <span class="tag">Email Management</span>
-                        <span class="tag">Calendar Scheduling</span>
-                        <span class="tag">Data Entry</span>
-                        <span class="tag">Research</span>
-                        <span class="tag">CRM Management</span>
-                        <span class="tag">Document Prep</span>
-                    </div>
-                </div>
-                <!-- Combined Card -->
-                <div class="service-card fade-in">
-                    <span class="card-icon">🔗</span>
-                    <h3>Integrated Support</h3>
-                    <p>A unique combination — I can manage engineering documentation, liaise with contractors, handle project timelines, and provide executive assistance all in one role.</p>
-                    <div class="tags">
-                        <span class="tag">Project Coordination</span>
-                        <span class="tag">Report Writing</span>
-                        <span class="tag">Stakeholder Communication</span>
-                        <span class="tag">Process Optimization</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Highlights Section -->
-        <section id="highlights">
-            <div class="section-header fade-in">
-                <span class="section-badge">Why Work With Me</span>
-                <h2>Key Highlights</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="highlights-grid">
-                <div class="highlight-item fade-in">
-                    <span class="highlight-number" data-count="100">0</span>
-                    <span class="highlight-label">Projects Completed</span>
-                </div>
-                <div class="highlight-item fade-in">
-                    <span class="highlight-number" data-count="45">0</span>
-                    <span class="highlight-label">Happy Clients</span>
-                </div>
-                <div class="highlight-item fade-in">
-                    <span class="highlight-number" data-count="8">0</span>
-                    <span class="highlight-label">Years Experience</span>
-                </div>
-                <div class="highlight-item fade-in">
-                    <span class="highlight-number" data-count="24">0</span>
-                    <span class="highlight-label">Hour Response Time</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="section-header fade-in">
-                <span class="section-badge">Let's Connect</span>
-                <h2>Get In Touch</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-info fade-in">
-                    <h3>Ready to collaborate?</h3>
                     <p>
-                        I'm currently open to full-time, contract, and freelance opportunities.
-                        Whether you need a civil engineer on your next infrastructure project or a
-                        reliable virtual assistant to streamline your operations — I'm here to help.
+                        My approach focuses on precision, efficiency, and clear communication. I aim to minimize errors,
+                        streamline workflows, and deliver consistent results across all phases of construction.
                     </p>
-                    <div class="contact-detail">
-                        <span class="detail-icon">📍</span>
-                        <span>Available for remote & on-site work</span>
-                    </div>
-                    <div class="contact-detail">
-                        <span class="detail-icon">📧</span>
-                        <span>contact@yourportfolio.com</span>
-                    </div>
-                    <div class="contact-detail">
-                        <span class="detail-icon">🌐</span>
-                        <span>github.com/yourusername</span>
+
+                    <p>
+                        I've worked on projects from estimation through execution using tools like <strong>AutoCAD, PlanSwift,
+                        Bluebeam, Excel, and Primavera</strong>.
+                    </p>
+
+                    <!-- Beyond Engineering -->
+                    <div class="about-extra card">
+                        <h3><i class="fa-solid fa-lightbulb"></i> Beyond Engineering</h3>
+                        <p>
+                            Outside of work, I focus on continuous improvement and maintaining a balanced lifestyle.
+                            I enjoy learning new tools, staying active, and exploring ideas that improve productivity.
+                        </p>
+                        <div class="hobbies">
+                            <span class="hobby-tag"><i class="fa-solid fa-dumbbell"></i> Fitness</span>
+                            <span class="hobby-tag"><i class="fa-solid fa-globe"></i> Travel</span>
+                            <span class="hobby-tag"><i class="fa-solid fa-laptop-code"></i> Tech & Tools</span>
+                            <span class="hobby-tag"><i class="fa-solid fa-book-open"></i> Learning</span>
+                        </div>
                     </div>
                 </div>
-                <form class="contact-form fade-in" id="contactForm">
-                    <input type="text" placeholder="Your Name" required id="nameInput">
-                    <input type="email" placeholder="Your Email" required id="emailInput">
-                    <input type="text" placeholder="Subject (e.g., Civil Engineer Role)" id="subjectInput">
-                    <textarea placeholder="Tell me about your project or opportunity..." required id="messageInput"></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message ✉️</button>
-                </form>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 <a href="#">Your Name</a> — Civil Engineer & Virtual Assistant. Built with precision. Powered by dedication.</p>
-        </footer>
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Toolkit</span>
+                <h2>Technical Skills<span class="accent">.</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-item card" data-percent="90">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-drafting-compass skill-icon"></i>
+                        <div class="skill-info">
+                            <p>AutoCAD</p>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:0%" data-width="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item card" data-percent="90">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-file-pdf skill-icon"></i>
+                        <div class="skill-info">
+                            <p>Bluebeam</p>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:0%" data-width="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item card" data-percent="85">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-ruler-combined skill-icon"></i>
+                        <div class="skill-info">
+                            <p>PlanSwift</p>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:0%" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item card" data-percent="88">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-table skill-icon"></i>
+                        <div class="skill-info">
+                            <p>Excel</p>
+                            <span>88%</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:0%" data-width="88%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item card" data-percent="92">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-calculator skill-icon"></i>
+                        <div class="skill-info">
+                            <p>Cost Estimation</p>
+                            <span>92%</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:0%" data-width="92%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>Featured Projects<span class="accent">.</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card card" onclick="openModal(
+                    'Quantity Takeoff',
+                    'Performed detailed material and labor takeoffs using PlanSwift for multiple commercial and residential projects. Improved estimation accuracy by 15% and reduced material waste by 10% through precise quantity calculations.',
+                    ['PlanSwift', 'Bluebeam', 'Excel', 'AutoCAD']
+                )">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Quantity Takeoff project" loading="lazy">
+                        <div class="project-overlay">
+                            <span>View Details</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Quantity Takeoff</h3>
+                        <p>Detailed material and labor takeoffs using PlanSwift, improving estimation accuracy and efficiency.</p>
+                        <div class="project-tags">
+                            <span>PlanSwift</span>
+                            <span>Bluebeam</span>
+                            <span>Excel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card" onclick="openModal(
+                    'Cost Estimation',
+                    'Developed comprehensive Excel-based cost estimates and budgets for projects valued up to $5M. Created automated templates that reduced estimation time by 30% while maintaining accuracy within 2%.',
+                    ['Excel', 'Cost Analysis', 'Budgeting', 'Primavera']
+                )">
+                    <div class="project-image">
+                        <img src="project2.jpg" alt="Cost Estimation project" loading="lazy">
+                        <div class="project-overlay">
+                            <span>View Details</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cost Estimation</h3>
+                        <p>Excel-based cost estimates and budgets, ensuring projects stayed within financial targets.</p>
+                        <div class="project-tags">
+                            <span>Excel</span>
+                            <span>Budgeting</span>
+                            <span>Cost Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Contact Me<span class="accent">.</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:jimsond.ragas@gmail.com">jimsond.ragas@gmail.com</a>
+                </div>
+
+                <div class="contact-card card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <a href="tel:+639532570916">+63 953 257 0916</a>
+                </div>
+
+                <div class="contact-card card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/jimsonragas" target="_blank" rel="noopener">linkedin.com/in/jimsonragas</a>
+                </div>
+
+                <div class="contact-card card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/jimsonragas" target="_blank" rel="noopener">github.com/jimsonragas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 <strong>Jimson D. Ragas</strong>. All rights reserved.</p>
+            <p class="footer-tagline">Precision in every calculation.</p>
+        </div>
+    </footer>
+
+    <!-- ========== MODAL ========== -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-backdrop" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button onclick="closeModal()" class="modal-close" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="modalTitle"></h3>
+            <p id="modalText"></p>
+            <div id="modalTags" class="modal-tags"></div>
+        </div>
     </div>
 
-    <script src="script.js" defer></script>
+    <!-- ========== BACK TO TOP ========== -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
