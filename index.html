@@ -1,365 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Jimson D. Ragas — Civil Engineer specializing in quantity takeoffs, cost estimation, and site supervision.">
-    <meta name="keywords" content="Civil Engineer, Quantity Takeoff, Cost Estimation, Site Supervision, PlanSwift, Bluebeam, AutoCAD">
-    <meta name="author" content="Jimson D. Ragas">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Jimson D. Ragas, Civil Engineer specializing in estimation and site supervision.">
+  <title>Jimson D. Ragas Portfolio</title>
 
-    <title>Jimson D. Ragas | Civil Engineer Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome 6 for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="light-mode">
 
-    <!-- ========== NAVIGATION ========== -->
-    <header id="header">
-        <nav class="navbar">
-            <a href="#hero" class="nav-brand">
-                <span class="brand-icon">🏗️</span>
-                <span class="brand-name">Jimson<span class="brand-dot">.</span></span>
-            </a>
+<body>
 
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-
-            <div class="nav-actions">
-                <button id="darkToggle" class="dark-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-                <button id="mobileMenuBtn" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- ========== HERO SECTION ========== -->
-    <section id="hero" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-particles" id="heroParticles"></div>
-        <div class="hero-content">
-            <p class="hero-greeting">👋 Hello, I'm</p>
-            <h1 class="hero-title">
-                <span id="typing"></span><span class="cursor">|</span>
-            </h1>
-            <p class="hero-subtitle">
-                I build accurate estimates, manage site execution, and deliver reliable construction results.
-            </p>
-            <div class="hero-buttons">
-                <a href="CV.pdf" class="btn btn-primary" download>
-                    <i class="fa-solid fa-download"></i> Download CV
-                </a>
-                <a href="#contact" class="btn btn-outline">
-                    <i class="fa-solid fa-envelope"></i> Get In Touch
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Projects</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Years Exp.</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Accuracy</span>
-                </div>
-            </div>
-        </div>
-        <a href="#about" class="scroll-down" aria-label="Scroll to about section">
-            <i class="fa-solid fa-chevron-down"></i>
-        </a>
-    </section>
-
-    <!-- ========== ABOUT SECTION ========== -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">About Me</span>
-                <h2>Get To Know<span class="accent">.</span></h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="about-grid">
-                <!-- Left Column -->
-                <div class="about-left">
-                    <div class="profile-wrapper">
-                        <img src="profile.jfif" alt="Jimson D. Ragas profile picture" class="profile-img" loading="lazy">
-                        <div class="profile-status">🟢 Available for Work</div>
-                    </div>
-
-                    <div class="quick-info card">
-                        <h3>Quick Info</h3>
-                        <ul>
-                            <li><i class="fa-solid fa-user"></i> <strong>Name:</strong> Jimson D. Ragas</li>
-                            <li><i class="fa-solid fa-cake-candles"></i> <strong>Age:</strong> 29</li>
-                            <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Philippines</li>
-                            <li><i class="fa-solid fa-hard-hat"></i> <strong>Field:</strong> Civil Engineering</li>
-                            <li><i class="fa-solid fa-bullseye"></i> <strong>Focus:</strong> Estimation | Takeoffs | Site Work</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Right Column -->
-                <div class="about-right">
-                    <p class="about-lead">
-                        I'm a <strong>civil engineer</strong> specializing in <strong>quantity takeoffs, cost estimation, and site supervision</strong>.
-                        I ensure projects stay on schedule and within budget by combining technical accuracy with real-world site experience.
-                    </p>
-
-                    <p>
-                        My approach focuses on precision, efficiency, and clear communication. I aim to minimize errors,
-                        streamline workflows, and deliver consistent results across all phases of construction.
-                    </p>
-
-                    <p>
-                        I've worked on projects from estimation through execution using tools like <strong>AutoCAD, PlanSwift,
-                        Bluebeam, Excel, and Primavera</strong>.
-                    </p>
-
-                    <!-- Beyond Engineering -->
-                    <div class="about-extra card">
-                        <h3><i class="fa-solid fa-lightbulb"></i> Beyond Engineering</h3>
-                        <p>
-                            Outside of work, I focus on continuous improvement and maintaining a balanced lifestyle.
-                            I enjoy learning new tools, staying active, and exploring ideas that improve productivity.
-                        </p>
-                        <div class="hobbies">
-                            <span class="hobby-tag"><i class="fa-solid fa-dumbbell"></i> Fitness</span>
-                            <span class="hobby-tag"><i class="fa-solid fa-globe"></i> Travel</span>
-                            <span class="hobby-tag"><i class="fa-solid fa-laptop-code"></i> Tech & Tools</span>
-                            <span class="hobby-tag"><i class="fa-solid fa-book-open"></i> Learning</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== SKILLS SECTION ========== -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">My Toolkit</span>
-                <h2>Technical Skills<span class="accent">.</span></h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-item card" data-percent="90">
-                    <div class="skill-header">
-                        <i class="fa-solid fa-drafting-compass skill-icon"></i>
-                        <div class="skill-info">
-                            <p>AutoCAD</p>
-                            <span>90%</span>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width:0%" data-width="90%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item card" data-percent="90">
-                    <div class="skill-header">
-                        <i class="fa-solid fa-file-pdf skill-icon"></i>
-                        <div class="skill-info">
-                            <p>Bluebeam</p>
-                            <span>90%</span>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width:0%" data-width="90%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item card" data-percent="85">
-                    <div class="skill-header">
-                        <i class="fa-solid fa-ruler-combined skill-icon"></i>
-                        <div class="skill-info">
-                            <p>PlanSwift</p>
-                            <span>85%</span>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width:0%" data-width="85%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item card" data-percent="88">
-                    <div class="skill-header">
-                        <i class="fa-solid fa-table skill-icon"></i>
-                        <div class="skill-info">
-                            <p>Excel</p>
-                            <span>88%</span>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width:0%" data-width="88%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item card" data-percent="92">
-                    <div class="skill-header">
-                        <i class="fa-solid fa-calculator skill-icon"></i>
-                        <div class="skill-info">
-                            <p>Cost Estimation</p>
-                            <span>92%</span>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width:0%" data-width="92%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== PROJECTS SECTION ========== -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Portfolio</span>
-                <h2>Featured Projects<span class="accent">.</span></h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="projects-grid">
-                <div class="project-card card" onclick="openModal(
-                    'Quantity Takeoff',
-                    'Performed detailed material and labor takeoffs using PlanSwift for multiple commercial and residential projects. Improved estimation accuracy by 15% and reduced material waste by 10% through precise quantity calculations.',
-                    ['PlanSwift', 'Bluebeam', 'Excel', 'AutoCAD']
-                )">
-                    <div class="project-image">
-                        <img src="project1.jpg" alt="Quantity Takeoff project" loading="lazy">
-                        <div class="project-overlay">
-                            <span>View Details</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Quantity Takeoff</h3>
-                        <p>Detailed material and labor takeoffs using PlanSwift, improving estimation accuracy and efficiency.</p>
-                        <div class="project-tags">
-                            <span>PlanSwift</span>
-                            <span>Bluebeam</span>
-                            <span>Excel</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card card" onclick="openModal(
-                    'Cost Estimation',
-                    'Developed comprehensive Excel-based cost estimates and budgets for projects valued up to $5M. Created automated templates that reduced estimation time by 30% while maintaining accuracy within 2%.',
-                    ['Excel', 'Cost Analysis', 'Budgeting', 'Primavera']
-                )">
-                    <div class="project-image">
-                        <img src="project2.jpg" alt="Cost Estimation project" loading="lazy">
-                        <div class="project-overlay">
-                            <span>View Details</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Cost Estimation</h3>
-                        <p>Excel-based cost estimates and budgets, ensuring projects stayed within financial targets.</p>
-                        <div class="project-tags">
-                            <span>Excel</span>
-                            <span>Budgeting</span>
-                            <span>Cost Analysis</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== CONTACT SECTION ========== -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get In Touch</span>
-                <h2>Contact Me<span class="accent">.</span></h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-card card">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <a href="mailto:jimsond.ragas@gmail.com">jimsond.ragas@gmail.com</a>
-                </div>
-
-                <div class="contact-card card">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <h3>Phone</h3>
-                    <a href="tel:+639532570916">+63 953 257 0916</a>
-                </div>
-
-                <div class="contact-card card">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
-                    <h3>LinkedIn</h3>
-                    <a href="https://linkedin.com/in/jimsonragas" target="_blank" rel="noopener">linkedin.com/in/jimsonragas</a>
-                </div>
-
-                <div class="contact-card card">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                    <h3>GitHub</h3>
-                    <a href="https://github.com/jimsonragas" target="_blank" rel="noopener">github.com/jimsonragas</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== FOOTER ========== -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 <strong>Jimson D. Ragas</strong>. All rights reserved.</p>
-            <p class="footer-tagline">Precision in every calculation.</p>
-        </div>
-    </footer>
-
-    <!-- ========== MODAL ========== -->
-    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <div class="modal-backdrop" onclick="closeModal()"></div>
-        <div class="modal-content">
-            <button onclick="closeModal()" class="modal-close" aria-label="Close modal">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h3 id="modalTitle"></h3>
-            <p id="modalText"></p>
-            <div id="modalTags" class="modal-tags"></div>
-        </div>
+<!-- HEADER -->
+<header class="header">
+  <nav class="navbar container">
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
 
-    <!-- ========== BACK TO TOP ========== -->
-    <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
-        <i class="fa-solid fa-arrow-up"></i>
+    <button id="darkToggle" class="dark-btn" aria-label="Toggle dark mode">
+      🌙
     </button>
+  </nav>
+</header>
 
-    <script src="script.js"></script>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content container">
+    <h1>I am <span id="typing"></span></h1>
+    <p>I build accurate estimates, manage site execution, and deliver reliable construction results.</p>
+    <a href="CV.pdf" class="btn" download>Download CV</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-modern">
+  <div class="container about-grid">
+
+    <div class="about-left">
+      <img src="profile.jfif" alt="Portrait of Jimson D. Ragas" class="profile-modern">
+
+      <div class="quick-info">
+        <p><strong>Name:</strong> Jimson D. Ragas</p>
+        <p><strong>Age:</strong> 29</p>
+        <p><strong>Location:</strong> Philippines</p>
+        <p><strong>Field:</strong> Civil Engineering</p>
+        <p><strong>Focus:</strong> Estimation | Takeoffs | Site Work</p>
+      </div>
+    </div>
+
+    <div class="about-right">
+      <h2>About Me</h2>
+
+      <p>
+        I specialize in <strong>quantity takeoffs, cost estimation, and site supervision</strong>,
+        ensuring projects stay on schedule and within budget.
+      </p>
+
+      <p>
+        My approach emphasizes precision, efficiency, and clear communication to minimize errors
+        and deliver consistent construction results.
+      </p>
+
+      <div class="about-extra">
+        <h3>Beyond Engineering</h3>
+        <p>I focus on continuous improvement, staying active, and exploring productivity tools.</p>
+
+        <div class="hobbies">
+          <span>🏋️ Fitness</span>
+          <span>🌍 Travel</span>
+          <span>💻 Tech</span>
+          <span>📚 Learning</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill">
+        <span>AutoCAD</span>
+        <div class="bar"><div style="width:90%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Bluebeam</span>
+        <div class="bar"><div style="width:90%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>PlanSwift</span>
+        <div class="bar"><div style="width:85%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Excel</span>
+        <div class="bar"><div style="width:88%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Cost Estimation</span>
+        <div class="bar"><div style="width:92%"></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+      <article class="card project" onclick="openModal('Detailed quantity takeoff project...')">
+        <img src="project1.jpg" alt="Quantity takeoff project preview">
+        <h3>Quantity Takeoff</h3>
+        <p>Performed detailed takeoffs using PlanSwift to improve accuracy.</p>
+      </article>
+
+      <article class="card project" onclick="openModal('Detailed cost estimation project...')">
+        <img src="project2.jpg" alt="Cost estimation project preview">
+        <h3>Cost Estimation</h3>
+        <p>Developed Excel-based budgets to control project costs.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+
+    <div class="card contact-card">
+      <p>📧 <a href="mailto:jimsond.ragas@gmail.com">jimsond.ragas@gmail.com</a></p>
+      <p>📞 <a href="tel:+639532570916">+63 953 257 0916</a></p>
+
+      <div class="social-links">
+        <a href="https://linkedin.com/in/jimsonragas" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/jimsonragas" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Jimson D. Ragas</p>
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <button onclick="closeModal()" class="close" aria-label="Close modal">&times;</button>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
