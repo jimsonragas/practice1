@@ -1,21 +1,8 @@
-// DARK MODE
-document.getElementById("darkToggle").onclick = () => {
-  document.body.classList.toggle("dark");
-};
+document.addEventListener("mousemove", (e) => {
+  const profile = document.querySelector(".profile img");
 
-// SCROLL ANIMATION
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = "translateY(0)";
-    }
-  });
-});
+  let x = (window.innerWidth / 2 - e.pageX) / 40;
+  let y = (window.innerHeight / 2 - e.pageY) / 40;
 
-document.querySelectorAll("section").forEach(el => {
-  el.style.opacity = 0;
-  el.style.transform = "translateY(40px)";
-  el.style.transition = "0.6s";
-  observer.observe(el);
+  profile.style.transform = `translate(-50%, 0) rotateY(${x}deg) rotateX(${y}deg)`;
 });
