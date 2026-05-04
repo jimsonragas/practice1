@@ -5,94 +5,92 @@
 }
 
 body {
-  background: linear-gradient(135deg, #e6e6e6, #cfcfcf);
+  background: #d9d9d9;
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
 }
 
 /* HERO */
 .hero {
   height: 100vh;
   position: relative;
-  padding: 40px;
+  overflow: hidden;
 }
 
-/* TEXTS */
-.top-text {
+/* TOP TEXT */
+.top {
   text-align: center;
+  margin-top: 30px;
+  letter-spacing: 4px;
   font-size: 14px;
-  letter-spacing: 3px;
 }
 
+/* BIG TITLE */
 .title {
-  text-align: center;
-  font-size: 120px;
-  font-weight: 800;
-  color: #0c9aa6;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 140px;
+  font-weight: 900;
+  color: #1c9aa6;
 }
 
 .title span {
-  color: #0c9aa6;
+  color: #1c9aa6;
 }
 
-/* SIGNATURE */
-.signature {
+/* SCRIPT TEXT */
+.script {
   position: absolute;
-  left: 70px;
-  top: 160px;
+  left: 100px;
+  top: 150px;
   font-family: 'Great Vibes', cursive;
-  font-size: 70px;
-  transform: rotate(-15deg);
+  font-size: 100px;
 }
 
-/* SUBTITLE */
-.subtitle {
+/* ENGINEER */
+.engineer {
   position: absolute;
-  right: 100px;
-  top: 200px;
-  letter-spacing: 2px;
+  right: 120px;
+  top: 180px;
+  letter-spacing: 3px;
 }
 
 /* QUOTE */
 .quote {
   position: absolute;
-  right: 100px;
-  top: 250px;
-  width: 280px;
+  right: 120px;
+  top: 240px;
+  width: 300px;
   font-family: 'Great Vibes', cursive;
+  font-size: 20px;
 }
 
 /* BUTTONS */
 .btn {
   position: absolute;
-  padding: 12px 25px;
+  padding: 12px 30px;
   border-radius: 30px;
   border: none;
   background: #111;
   color: white;
-  cursor: pointer;
-  transition: 0.3s;
+  font-size: 14px;
 }
 
-.btn:hover {
-  transform: translateY(-3px);
-  background: #0c9aa6;
+.left {
+  left: 120px;
+  top: 400px;
 }
 
-.name {
-  left: 100px;
-  top: 350px;
-}
-
-.year {
-  right: 100px;
-  top: 350px;
+.right {
+  right: 120px;
+  top: 400px;
 }
 
 /* CONTACT */
 .contact {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -106,66 +104,21 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.profile img {
   width: 420px;
-  animation: float 4s ease-in-out infinite;
-}
-
-/* FLOATING ANIMATION */
-@keyframes float {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
 }
 
 /* FLOATING ICONS */
-.floating {
+.icon {
   position: absolute;
   width: 40px;
-  animation: floatIcon 6s infinite;
 }
 
 .like {
-  left: 45%;
+  left: 48%;
   top: 40%;
 }
 
 .heart {
   left: 55%;
-  top: 35%;
-}
-
-@keyframes floatIcon {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
-}
-
-/* GLASS EFFECT */
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background: rgba(255,255,255,0.3);
-  filter: blur(100px);
-  top: 20%;
-  left: 30%;
-  z-index: -1;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .title {
-    font-size: 60px;
-  }
-
-  .profile img {
-    width: 280px;
-  }
-
-  .quote {
-    display: none;
-  }
+  top: 38%;
 }
