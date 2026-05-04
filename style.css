@@ -10,19 +10,27 @@ body {
   overflow-x: hidden;
 }
 
-/* HERO DESKTOP */
+/* HERO SCROLL */
+.hero-scroll {
+  height: 200vh;
+}
+
 .hero {
+  position: sticky;
+  top: 0;
   height: 100vh;
   position: relative;
 }
 
-/* TEXTS */
+/* TOP TEXT */
 .top {
   text-align: center;
   margin-top: 30px;
   letter-spacing: 4px;
+  font-size: 14px;
 }
 
+/* TITLE */
 .title {
   position: absolute;
   top: 80px;
@@ -33,6 +41,7 @@ body {
   color: #1c9aa6;
 }
 
+/* SCRIPT */
 .script {
   position: absolute;
   left: 100px;
@@ -41,12 +50,14 @@ body {
   font-size: 100px;
 }
 
+/* ENGINEER */
 .engineer {
   position: absolute;
   right: 120px;
   top: 180px;
 }
 
+/* QUOTE */
 .quote {
   position: absolute;
   right: 120px;
@@ -61,7 +72,7 @@ body {
   padding: 12px 30px;
   border-radius: 30px;
   border: none;
-  background: #111;
+  background: black;
   color: white;
 }
 
@@ -76,6 +87,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 40px;
+  font-size: 12px;
 }
 
 /* PROFILE */
@@ -84,26 +96,20 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 420px;
+  width: 400px;
 }
 
-/* ICONS */
-.icon {
-  position: absolute;
-  width: 40px;
-  animation: float 4s infinite;
-}
-
-/* SCROLL SECTIONS */
+/* SECTIONS */
 .section {
   padding: 100px 20px;
   text-align: center;
 }
 
+/* CARDS */
 .cards {
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
 }
 
 .card {
@@ -112,28 +118,37 @@ body {
   border-radius: 10px;
 }
 
-/* ANIMATIONS */
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-/* MOBILE FIX */
+/* ===== MOBILE FIX ===== */
 @media (max-width: 768px) {
 
+  .hero-scroll {
+    height: auto;
+  }
+
+  .hero {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
   .title {
-    font-size: 60px;
-    top: 120px;
+    position: static;
+    transform: none;
+    font-size: 48px;
+    text-align: center;
   }
 
   .script {
     position: static;
-    text-align: center;
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 48px;
+    margin-top: 10px;
   }
 
-  .engineer, .quote {
+  .engineer,
+  .quote {
     position: static;
     text-align: center;
     margin-top: 10px;
@@ -144,9 +159,18 @@ body {
     margin: 10px;
   }
 
+  .contact {
+    position: static;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+  }
+
   .profile {
-    width: 250px;
-    bottom: -20px;
+    position: static;
+    width: 220px;
+    margin-top: 20px;
+    transform: none;
   }
 
   .cards {
